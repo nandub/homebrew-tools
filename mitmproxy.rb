@@ -2,8 +2,8 @@ require 'formula'
 
 class Mitmproxy < Formula
   homepage 'http://mitmproxy.org'
-  url 'http://mitmproxy.org/download/mitmproxy-0.9.1.tar.gz'
-  sha1 'c0acfce33d5fef04987a789ad145dc72b576be3c'
+  url 'http://mitmproxy.org/download/mitmproxy-0.9.2.tar.gz'
+  sha1 '7fa95ef27a4ac5ec85010f4ddb85cf6b7f17ef27'
 
   depends_on :python
   depends_on 'openssl'
