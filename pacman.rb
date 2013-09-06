@@ -9,12 +9,14 @@ class Pacman < Formula
   depends_on 'bash'
   depends_on 'libarchive'
   depends_on 'fakeroot'
+  depends_on 'openssl'
+  depends_on 'curl'
 
   def install
     system "./configure", "--disable-dependency-tracking",
                           "--prefix=#{prefix}",
-                          "--disable-linker-optimisations",
-                          "--disable-update-alternatives"
+                          "--with-openssl",
+                          "--with-libcurl"
     system "make"
     system "make install"
   end
