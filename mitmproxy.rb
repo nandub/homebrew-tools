@@ -5,7 +5,7 @@ class Mitmproxy < Formula
   url 'http://mitmproxy.org/download/mitmproxy-0.9.2.tar.gz'
   sha1 '7fa95ef27a4ac5ec85010f4ddb85cf6b7f17ef27'
 
-  depends_on :python
+  depends_on :python => :recommended
   depends_on 'openssl'
 
   def install
