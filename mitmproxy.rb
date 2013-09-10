@@ -66,7 +66,6 @@ class Mitmproxy < Formula
       PyAsn1.new.brew { system python, *install_args }
       Urwid.new.brew { system python, *install_args }
 
-      p "#{python.private_site_packages}"
       inreplace 'libmproxy/__init__.py',
                 "",
                 "import site; site.addsitedir('#{python.private_site_packages}')"
