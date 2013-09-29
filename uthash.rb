@@ -6,7 +6,7 @@ class Uthash < Formula
 
   def install
     cd 'src' do
-      include.install 'uthash.h'
+      include.install 'utarray.h', 'uthash.h', 'utlist.h', 'utstring.h'
     end
   end
 end
