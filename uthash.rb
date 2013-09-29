@@ -5,7 +5,7 @@ class Uthash < Formula
   head 'https://github.com/troydhanson/uthash.git'
 
   def install
-    cd src do
+    cd 'src' do
       include.install 'uthash.h'
     end
   end
