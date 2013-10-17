@@ -8,8 +8,6 @@ class Pkgconf < Formula
   def install
     args = %W[
         --prefix=#{prefix}
-        --with-system-libdir=/lib:/usr/lib:/usr/local/lib
-        --with-system-includedir=/usr/include:/usr/local/include
       ]
 
     system "./configure", *args
