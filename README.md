@@ -1,10 +1,10 @@
 homebrew-tools
 =========
 
-my homebrew recipes not submitted to mxcl/homebrew core
+my homebrew recipes not submitted to Homebrew/homebrew core
 
 Usage:
 
     brew tap nandub/tools
-    brew install mitmproxy
+    brew install gale
   
