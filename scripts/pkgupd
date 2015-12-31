@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+set -e
+
+this=$(dirname $0)
+name=$1
+
+if [ "x$name" = "xlocal" ]; then
+  shift
+  name=$1
+  url=$2
+  $this/brew-local $name $url
+else
+  . $this/../$name/url.sh
+  $this/run.sh $name
+fi

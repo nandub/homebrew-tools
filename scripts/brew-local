@@ -1,5 +1,5 @@
 #!/bin/bash
-# Usage: script/brew-local <name> <version> [<gh-project>]
+# Usage: script/brew-local <name> <url>
 #
 set -e
 

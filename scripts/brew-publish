@@ -17,7 +17,7 @@ fi
 
 if [ -z "$url" ]; then
   echo variable "url" is not set use default.
-  . $this/github_url.sh
+  . $this/url.sh $3
 fi
 
 checksum="$(curl -fsSL "$url" | shasum -a 256 -b | awk '{print $1}')"
