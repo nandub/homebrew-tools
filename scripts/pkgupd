@@ -9,7 +9,7 @@ if [ "x$name" = "xlocal" ]; then
   shift
   name=$1
   url=$2
-  $this/brew-local $name $url
+  exec $this/brew-local $name $url
 else
   . $this/../$name/url.sh
   $this/run.sh $name
